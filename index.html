@@ -5,74 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Малакаҳои техникӣ</title>
     <style>
-        /* Саббки умумии саҳифа */
+        /* Стилҳои умумӣ барои саҳифа */
         body {
-            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
-            background-color: #f8f9fa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 40px;
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
         }
 
-        /* Контейнери асосӣ (Карточка) */
-        .skills-card {
+        /* Карточкаи асосии сафед */
+        .card {
             background-color: #ffffff;
-            padding: 24px 32px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            max-width: 800px;
+            border-radius: 8px;
+            padding: 24px;
+            max-width: 850px;
             width: 100%;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
         }
 
-        /* Сарлавҳаи "Малакаҳои техникӣ" */
-        .skills-title {
-            color: #007bff; /* Ранги кабуд */
+        /* Сарлавҳаи кабуд */
+        .title {
+            color: #007bff;
             font-size: 24px;
-            font-weight: 700;
-            margin: 0 0 16px 0;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 16px;
             padding-bottom: 12px;
-            border-bottom: 1px solid #e9ecef; /* Хати хокистарии зери сарлавҳа */
+            border-bottom: 1px solid #e5e7eb; /* Хати хокистарии зери сарлавҳа */
         }
 
-        /* Блоки тегҳо (Flexbox) */
-        .skills-container {
+        /* Контейнери тегҳо */
+        .tags-container {
             display: flex;
-            flex-wrap: wrap; /* Барои он ки тегҳо ба сатри нав гузаранд */
+            flex-wrap: wrap; /* Барои ба сатри нав гузаштани тегҳо */
             gap: 12px; /* Фосилаи байни тегҳо */
-            margin-top: 16px;
         }
 
-        /* Стил барои ҳар як Тег (Баҷ) */
-        .skill-tag {
-            background-color: #e2e8f0; /* Ранги хокистарии паси замина */
-            color: #1a202c; /* Ранги тираи матн */
+        /* Стили тугмачаҳо (тегҳо) */
+        .tag {
+            background-color: #e2e8f0; /* Ранги паси заминаи хокистарӣ */
+            color: #1e293b; /* Ранги матни тира */
             padding: 8px 18px;
-            border-radius: 50px; /* Кунҷҳои комилан гирд */
+            border-radius: 50px; /* Кунҷҳои гирд (pill) */
             font-size: 14px;
-            font-weight: 600;
+            font-weight: bold;
             display: inline-block;
-            cursor: default;
-            transition: background-color 0.2s ease;
-        }
-
-        /* Эффект ҳангоми бурдани курсор (ихтиёрӣ) */
-        .skill-tag:hover {
-            background-color: #cbd5e0;
         }
     </style>
 </head>
 <body>
 
-    <div class="skills-card">
-        <h2 class="skills-title">Малакаҳои техникӣ</h2>
-        <div class="skills-container">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Django Framework</span>
-            <span class="skill-tag">HTML5 & CSS3</span>
-            <span class="skill-tag">Git & GitHub</span>
-            <span class="skill-tag">SQL / Базаи маълумот</span>
+    <div class="card">
+        <h2 class="title">Малакаҳои техникӣ</h2>
+        <div class="tags-container">
+            <span class="tag">Python</span>
+            <span class="tag">Django Framework</span>
+            <span class="tag">HTML5 & CSS3</span>
+            <span class="tag">Git & GitHub</span>
+            <span class="tag">SQL / Базаи маълумот</span>
         </div>
     </div>
 

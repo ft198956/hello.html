@@ -3,150 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолиои Валиҷон</title>
+    <title>Малакаҳои техникӣ</title>
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+        /* Саббки умумии саҳифа */
         body {
-            background-color: #f5f6fa;
-            color: #2f3640;
-            line-height: 1.6;
-        }
-        header {
-            background: linear-gradient(135deg, #0984e3, #6c5ce7);
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        .container {
-            max-width: 900px;
-            margin: -40px auto 40px auto;
-            padding: 20px;
-        }
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            margin-bottom: 30px;
-        }
-        h2 {
-            color: #0984e3;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #f1f2f6;
-            padding-bottom: 8px;
-        }
-        .skills-list {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+            background-color: #f8f9fa;
             display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            list-style: none;
-            margin-top: 10px;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-        .skills-list li {
-            background: #dfe6e9;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: bold;
-            color: #2d3436;
+
+        /* Контейнери асосӣ (Карточка) */
+        .skills-card {
+            background-color: #ffffff;
+            padding: 24px 32px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            max-width: 800px;
+            width: 100%;
         }
-        .project-item {
-            background: #f8f9fa;
-            padding: 15px;
-            border-left: 4px solid #6c5ce7;
-            margin-bottom: 15px;
-            border-radius: 0 8px 8px 0;
+
+        /* Сарлавҳаи "Малакаҳои техникӣ" */
+        .skills-title {
+            color: #007bff; /* Ранги кабуд */
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 0 16px 0;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #e9ecef; /* Хати хокистарии зери сарлавҳа */
         }
-        .project-item h3 {
-            margin-bottom: 5px;
-            color: #2d3436;
+
+        /* Блоки тегҳо (Flexbox) */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap; /* Барои он ки тегҳо ба сатри нав гузаранд */
+            gap: 12px; /* Фосилаи байни тегҳо */
+            margin-top: 16px;
         }
-        .contact-btn {
+
+        /* Стил барои ҳар як Тег (Баҷ) */
+        .skill-tag {
+            background-color: #e2e8f0; /* Ранги хокистарии паси замина */
+            color: #1a202c; /* Ранги тираи матн */
+            padding: 8px 18px;
+            border-radius: 50px; /* Кунҷҳои комилан гирд */
+            font-size: 14px;
+            font-weight: 600;
             display: inline-block;
-            background: #0984e3;
-            color: white;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            margin-top: 15px;
-            transition: 0.3s;
+            cursor: default;
+            transition: background-color 0.2s ease;
         }
-        .contact-btn:hover {
-            background: #00cec9;
-            transform: translateY(-2px);
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #7f8c8d;
-            font-size: 0.9rem;
+
+        /* Эффект ҳангоми бурдани курсор (ихтиёрӣ) */
+        .skill-tag:hover {
+            background-color: #cbd5e0;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Валиҷон</h1>
-        <p>Навкори ҷаҳони барномасозӣ | Python & Web Developer</p>
-    </header>
-
-    <div class="container">
-        <!-- Дар бораи ман -->
-        <div class="card">
-            <h2>Дар бораи ман</h2>
-            <p>Салом! Ман ба омӯзиши сохтани сайтҳо ва барномасозӣ бо забони Python машғулам. Ба ман автоматизатсияи корҳо ва сохтани сайтҳои замонавӣ писанд аст. Ҳадафи ман — шудан ба як мутахассиси касбии соҳаи IT мебошад.</p>
-        </div>
-
-        <!-- Малакаҳо -->
-        <div class="card">
-            <h2>Малакаҳои техникӣ</h2>
-            <ul class="skills-list">
-                <li>Python</li>
-                <li>Django Framework</li>
-                <li>HTML5 & CSS3</li>
-                <li>Git & GitHub</li>
-                <li>SQL / Базаи маълумот</li>
-            </ul>
-        </div>
-
-        <!-- Лоиҳаҳо -->
-        <div class="card">
-            <h2>Лоиҳаҳои ман</h2>
-            <div class="project-item">
-                <h3>1. Сайти аввалини ман (Hello World)</h3>
-                <p>Аввалин вебсайти статикӣ, ки дар хостинги GitHub Pages бомуваффақият ҷойгир карда шуд.</p>
-            </div>
-            <div class="project-item">
-                <h3>2. Пайваст кардани Telegram бо Python</h3>
-                <p>Скриптҳои хурд барои кор бо Telegram ва ҷамъоварии маълумот бо истифода аз китобхонаҳои Python.</p>
-            </div>
-        </div>
-
-        <!-- Алоқа -->
-        <div class="card" style="text-align: center;">
-            <h2>Бо ман ҳамкорӣ кунед</h2>
-            <p>Мехоҳед якҷоя лоиҳае созем ё ягон савол доред? Ба ман нависед!</p>
-            <a href="mailto:мисол@почта.tj" class="contact-btn">Навиштан ба почта</a>
+    <div class="skills-card">
+        <h2 class="skills-title">Малакаҳои техникӣ</h2>
+        <div class="skills-container">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Django Framework</span>
+            <span class="skill-tag">HTML5 & CSS3</span>
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">SQL / Базаи маълумот</span>
         </div>
     </div>
-
-    <footer>
-        <p>© 2026 Портфолиои Валиҷон. Ҳамаи ҳуқуқҳо ҳифз шудаанд.</p>
-    </footer>
 
 </body>
 </html>
